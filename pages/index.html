@@ -57,7 +57,7 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">26</div>
-                                    <div>New Alerts!</div>
+                                    <div>New Messages!</div>
                                 </div>
                             </div>
                         </div>
@@ -79,7 +79,7 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">12</div>
-                                    <div>New Tasks!</div>
+                                    <div>New Diagnosis!</div>
                                 </div>
                             </div>
                         </div>
@@ -97,11 +97,11 @@
                         <div class="panel-heading">
                             <div class="row">
                                 <div class="col-xs-3">
-                                    <i class="fa fa-shopping-cart fa-5x"></i>
+                                    <i class="fa fa-plug fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">124</div>
-                                    <div>New Orders!</div>
+                                    <div class="huge">16</div>
+                                    <div>New Charges!</div>
                                 </div>
                             </div>
                         </div>
@@ -119,11 +119,11 @@
                         <div class="panel-heading">
                             <div class="row">
                                 <div class="col-xs-3">
-                                    <i class="fa fa-support fa-5x"></i>
+                                    <i class="fa fa-map-marker fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">13</div>
-                                    <div>Support Tickets!</div>
+                                    <div class="huge">5</div>
+                                    <div>New Trips!</div>
                                 </div>
                             </div>
                         </div>
@@ -143,7 +143,7 @@
                 <div class="col-lg-8">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Gauges Panel
+                            <i class="fa fa-dashboard fa-fw"></i> Gauge Panel
                             <div class="pull-right">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -153,61 +153,75 @@
                                     <ul class="dropdown-menu pull-right" role="menu">
                                         <li><a href="#">Action</a>
                                         </li>
-                                        <li><a href="#">Another action</a>
+                                        <li><a href="#">Full Screen</a>
                                         </li>
-                                        <li><a href="#">Something else here</a>
+                                        <li><a href="#">New Tab</a>
                                         </li>
                                         <li class="divider"></li>
-                                        <li><a href="#">Separated link</a>
+                                        <li><a href="#">Remove</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <canvas id="gauge-speed"></canvas>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="row">
-                                            <div>
-                                                <canvas id="gauge-current"></canvas>
-                                            </div>
+                        <div class="panel-body container">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-2">
+                                    <div class="list-group">
+                                        <div class="list-group-item">
+                                            ODO<span class="pull-right">12,000 mi</span>
                                         </div>
-                                        <div class="row">
-                                            <div>
-                                                <canvas id="gauge-voltage"></canvas>
-                                            </div>
+                                        <div class="list-group-item">
+                                            Trip<span class="pull-right">645 mi</span>
                                         </div>
-                                    </div>
-                                    
-                                    <div class="col-lg-2">
-                                        <div class="row">
-                                            <div>
-                                                <canvas id="gauge-lowtemp"></canvas>
-                                            </div>
+                                        <div class="list-group-item">
+                                            Energy<span class="pull-right">80 kWh</span>
                                         </div>
-                                        <div class="row">
-                                            <div>
-                                                <canvas id="gauge-hightemp"></canvas>
-                                            </div>
+                                        <div class="list-group-item">
+                                            Range<span class="pull-right">300 mi</span>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <canvas id="gauge-power"></canvas>
                                     </div>
                                 </div>
-                      
+                                <div class="col-sm-3 col-xs-6">
+                                    <canvas id="gauge-speed"></canvas>
+                                </div>
+                                <div class="col-sm-2 col-xs-6">
+                                    <div class="row">
+                                        <div>
+                                            <canvas id="gauge-current"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div>
+                                            <canvas id="gauge-voltage"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-2 col-xs-6">
+                                    <div class="row">
+                                        <div>
+                                            <canvas id="gauge-lowtemp"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div>
+                                            <canvas id="gauge-hightemp"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6">
+                                    <canvas id="gauge-power"></canvas>
+                                </div>
+                            </div>
                         </div>
                         <!-- /.panel-body -->
                     </div>
 
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Area Chart Example
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Comparison Chart
                             <div class="pull-right">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -217,12 +231,12 @@
                                     <ul class="dropdown-menu pull-right" role="menu">
                                         <li><a href="#">Action</a>
                                         </li>
-                                        <li><a href="#">Another action</a>
+                                        <li><a href="#">Full Screen</a>
                                         </li>
-                                        <li><a href="#">Something else here</a>
+                                        <li><a href="#">New Tab</a>
                                         </li>
                                         <li class="divider"></li>
-                                        <li><a href="#">Separated link</a>
+                                        <li><a href="#">Remove</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -237,7 +251,7 @@
                     <!-- /.panel -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
+                            <i class="fa fa-bar-chart-o fa-fw"></i> SOC Records
                             <div class="pull-right">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -247,12 +261,12 @@
                                     <ul class="dropdown-menu pull-right" role="menu">
                                         <li><a href="#">Action</a>
                                         </li>
-                                        <li><a href="#">Another action</a>
+                                        <li><a href="#">Full Screen</a>
                                         </li>
-                                        <li><a href="#">Something else here</a>
+                                        <li><a href="#">New Tab</a>
                                         </li>
                                         <li class="divider"></li>
-                                        <li><a href="#">Separated link</a>
+                                        <li><a href="#">Remove</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -269,57 +283,57 @@
                                                     <th>#</th>
                                                     <th>Date</th>
                                                     <th>Time</th>
-                                                    <th>Amount</th>
+                                                    <th>SOC</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>3326</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:29 PM</td>
-                                                    <td>$321.33</td>
+                                                    <td>09/20/2016</td>
+                                                    <td>7:29 PM</td>
+                                                    <td>20%</td>
                                                 </tr>
                                                 <tr>
                                                     <td>3325</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:20 PM</td>
-                                                    <td>$234.34</td>
+                                                    <td>09/20/2016</td>
+                                                    <td>7:20 PM</td>
+                                                    <td>22%</td>
                                                 </tr>
                                                 <tr>
                                                     <td>3324</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:03 PM</td>
-                                                    <td>$724.17</td>
+                                                    <td>09/20/2016</td>
+                                                    <td>7:03 PM</td>
+                                                    <td>25%</td>
                                                 </tr>
                                                 <tr>
                                                     <td>3323</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:00 PM</td>
-                                                    <td>$23.71</td>
+                                                    <td>09/20/2016</td>
+                                                    <td>7:00 PM</td>
+                                                    <td>28%</td>
                                                 </tr>
                                                 <tr>
                                                     <td>3322</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:49 PM</td>
-                                                    <td>$8345.23</td>
+                                                    <td>09/20/2016</td>
+                                                    <td>6:49 PM</td>
+                                                    <td>31%</td>
                                                 </tr>
                                                 <tr>
                                                     <td>3321</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:23 PM</td>
-                                                    <td>$245.12</td>
+                                                    <td>09/20/2016</td>
+                                                    <td>6:23 PM</td>
+                                                    <td>33%</td>
                                                 </tr>
                                                 <tr>
                                                     <td>3320</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:15 PM</td>
-                                                    <td>$5663.54</td>
+                                                    <td>09/20/2016</td>
+                                                    <td>6:15 PM</td>
+                                                    <td>34%</td>
                                                 </tr>
                                                 <tr>
                                                     <td>3319</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:13 PM</td>
-                                                    <td>$943.45</td>
+                                                    <td>09/20/2016</td>
+                                                    <td>6:13 PM</td>
+                                                    <td>35%</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -343,53 +357,58 @@
                 <div class="col-lg-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bell fa-fw"></i> Notifications Panel
+                            <i class="fa fa-comments fa-fw"></i> Notifications Panel
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <div class="list-group">
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <i class="fa fa-comment fa-fw"></i> New Data Collected
                                     <span class="pull-right text-muted small"><em>4 minutes ago</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <i class="fa fa-map-signs fa-fw"></i> At Bus Stop
                                     <span class="pull-right text-muted small"><em>12 minutes ago</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <i class="fa fa-bus fa-fw"></i> In Transit
                                     <span class="pull-right text-muted small"><em>27 minutes ago</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <i class="fa fa-tasks fa-fw"></i> Diagnose before start off
                                     <span class="pull-right text-muted small"><em>43 minutes ago</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                    <span class="pull-right text-muted small"><em>11:32 AM</em>
+                                    <i class="fa fa-battery-4 fa-fw"></i> Fully Charged!
+                                    <span class="pull-right text-muted small"><em>02:10 AM</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-bolt fa-fw"></i> Server Crashed!
-                                    <span class="pull-right text-muted small"><em>11:13 AM</em>
+                                    <i class="fa fa-battery-3 fa-fw"></i> Battery in Charging!
+                                    <span class="pull-right text-muted small"><em>01:30 AM</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-warning fa-fw"></i> Server Not Responding
-                                    <span class="pull-right text-muted small"><em>10:57 AM</em>
+                                    <i class="fa fa-battery-2 fa-fw"></i> Battery in Charging!
+                                    <span class="pull-right text-muted small"><em>01:00 AM</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-shopping-cart fa-fw"></i> New Order Placed
-                                    <span class="pull-right text-muted small"><em>9:49 AM</em>
+                                    <i class="fa fa-battery-1 fa-fw"></i> Battery in Charging!
+                                    <span class="pull-right text-muted small"><em>00:30 AM</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-money fa-fw"></i> Payment Received
+                                    <i class="fa fa-plug fa-fw"></i> Start to Charge
+                                    <span class="pull-right text-muted small"><em>00:13 AM</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-battery-0 fa-fw"></i> Out of Battery
                                     <span class="pull-right text-muted small"><em>Yesterday</em>
                                     </span>
                                 </a>

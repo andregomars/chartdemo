@@ -3,59 +3,59 @@ $(function() {
     Morris.Area({
         element: 'morris-area-chart',
         data: [{
-            period: '2010 Q1',
-            iphone: 2666,
-            ipad: null,
-            itouch: 2647
+            period: '2016-09-20 11:00',
+            milage: 2666,
+            speed: null,
+            SOC: 2647
         }, {
-            period: '2010 Q2',
-            iphone: 2778,
-            ipad: 2294,
-            itouch: 2441
+            period: '2016-09-20 12:00',
+            milage: 2778,
+            speed: 2294,
+            SOC: 2441
         }, {
-            period: '2010 Q3',
-            iphone: 4912,
-            ipad: 1969,
-            itouch: 2501
+            period: '2016-09-20 13:00',
+            milage: 4912,
+            speed: 1969,
+            SOC: 2501
         }, {
-            period: '2010 Q4',
-            iphone: 3767,
-            ipad: 3597,
-            itouch: 5689
+            period: '2016-09-20 14:00',
+            milage: 3767,
+            speed: 3597,
+            SOC: 5689
         }, {
-            period: '2011 Q1',
-            iphone: 6810,
-            ipad: 1914,
-            itouch: 2293
+            period: '2016-09-20 15:00',
+            milage: 6810,
+            speed: 1914,
+            SOC: 2293
         }, {
-            period: '2011 Q2',
-            iphone: 5670,
-            ipad: 4293,
-            itouch: 1881
+            period: '2016-09-20 16:00',
+            milage: 5670,
+            speed: 4293,
+            SOC: 1881
         }, {
-            period: '2011 Q3',
-            iphone: 4820,
-            ipad: 3795,
-            itouch: 1588
+            period: '2016-09-20 17:00',
+            milage: 4820,
+            speed: 3795,
+            SOC: 1588
         }, {
-            period: '2011 Q4',
-            iphone: 15073,
-            ipad: 5967,
-            itouch: 5175
+            period: '2016-09-20 18:00',
+            milage: 15073,
+            speed: 5967,
+            SOC: 5175
         }, {
-            period: '2012 Q1',
-            iphone: 10687,
-            ipad: 4460,
-            itouch: 2028
+            period: '2016-09-20 19:00',
+            milage: 10687,
+            speed: 4460,
+            SOC: 2028
         }, {
-            period: '2012 Q2',
-            iphone: 8432,
-            ipad: 5713,
-            itouch: 1791
+            period: '2016-09-20 20:00',
+            milage: 8432,
+            speed: 5713,
+            SOC: 1791
         }],
         xkey: 'period',
-        ykeys: ['iphone', 'ipad', 'itouch'],
-        labels: ['iPhone', 'iPad', 'iPod Touch'],
+        ykeys: ['milage', 'speed', 'SOC'],
+        labels: ['Milage', 'Speed', 'SOC'],
         pointSize: 2,
         hideHover: 'auto',
         resize: true
@@ -79,37 +79,37 @@ $(function() {
     Morris.Bar({
         element: 'morris-bar-chart',
         data: [{
-            y: '2006',
+            y: '2016-09-01',
             a: 100,
             b: 90
         }, {
-            y: '2007',
+            y: '2016-09-02',
             a: 75,
             b: 65
         }, {
-            y: '2008',
+            y: '2016-09-03',
             a: 50,
             b: 40
         }, {
-            y: '2009',
+            y: '2016-09-04',
             a: 75,
             b: 65
         }, {
-            y: '2010',
+            y: '2016-09-05',
             a: 50,
             b: 40
         }, {
-            y: '2011',
+            y: '2016-09-06',
             a: 75,
             b: 65
         }, {
-            y: '2012',
+            y: '2016-09-07',
             a: 100,
             b: 90
         }],
         xkey: 'y',
         ykeys: ['a', 'b'],
-        labels: ['Series A', 'Series B'],
+        labels: ['Votage', 'Amp'],
         hideHover: 'auto',
         resize: true
     });
