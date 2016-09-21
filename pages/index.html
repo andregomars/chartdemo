@@ -26,6 +26,8 @@
     <!-- Custom Fonts -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+    <link href="../vendor/bootstrap-toggle/css/bootstrap2-toggle.min.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -165,9 +167,9 @@
                             </div>
                         </div>
                         <!-- /.panel-heading -->
-                        <div class="panel-body container">
+                        <div class="panel-body">
                             <div class="row">
-                                <div class="col-sm-12 col-md-2">
+                                <div class="col-sm-12 col-md-2 chat">
                                     <div class="list-group">
                                         <div class="list-group-item">
                                             ODO<span class="pull-right">12,000 mi</span>
@@ -183,35 +185,27 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-3 col-xs-6">
+                                <div class="col-sm-3 col-xs-6 chat">
                                     <canvas id="gauge-speed"></canvas>
                                 </div>
-                                <div class="col-sm-2 col-xs-6">
+                                <div class="col-sm-2 col-xs-6 chat">
                                     <div class="row">
-                                        <div>
                                             <canvas id="gauge-current"></canvas>
-                                        </div>
                                     </div>
                                     <div class="row">
-                                        <div>
                                             <canvas id="gauge-voltage"></canvas>
-                                        </div>
                                     </div>
                                 </div>
                                 
-                                <div class="col-sm-2 col-xs-6">
+                                <div class="col-sm-2 col-xs-6 chat">
                                     <div class="row">
-                                        <div>
                                             <canvas id="gauge-lowtemp"></canvas>
-                                        </div>
                                     </div>
                                     <div class="row">
-                                        <div>
                                             <canvas id="gauge-hightemp"></canvas>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-3 col-xs-6">
+                                <div class="col-sm-3 col-xs-6 chat">
                                     <canvas id="gauge-power"></canvas>
                                 </div>
                             </div>
@@ -414,137 +408,65 @@
                                 </a>
                             </div>
                             <!-- /.list-group -->
-                            <a href="#" class="btn btn-default btn-block">View All Alerts</a>
+                            <a href="#" class="btn btn-default btn-block">View All Messages</a>
                         </div>
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Donut Chart Example
+                            <i class="fa fa-sliders fa-fw"></i> Switch Concole
                         </div>
                         <div class="panel-body">
-                            <div id="morris-donut-chart"></div>
-                            <a href="#" class="btn btn-default btn-block">View Details</a>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <span class="pull-left"><h5>Left Gun</h5></span>
+                                    <span class="pull-right"><input type="checkbox" checked data-toggle="toggle" data-width="60" data-height="30" ></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <span class="pull-left"><h5>Right Gun</h5></span>
+                                    <span class="pull-right"><input type="checkbox" checked data-toggle="toggle" data-width="60" data-height="30" ></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <span class="pull-left"><h5>Voltage</h5></span>
+                                    <span class="pull-right"><input type="checkbox" data-toggle="toggle" data-width="60" data-height="30" ></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <span class="pull-left"><h5>Gear</h5></span>
+                                    <span class="pull-right"><input type="checkbox" data-toggle="toggle" data-width="60" data-height="30" data-on="P" checked disabled data-onstyle="success"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <span class="pull-left"><h5>Door Front</h5></span>
+                                    <span class="pull-right"><input type="checkbox" checked data-toggle="toggle" data-width="60" data-height="30" ></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <span class="pull-left"><h5>Door Back</h5></span>
+                                    <span class="pull-right"><input type="checkbox" checked data-toggle="toggle" data-width="60" data-height="30" ></span>
+                                </div>
+                            </div>
                         </div>
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
                     <div class="chat-panel panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-comments fa-fw"></i> Chat
-                            <div class="btn-group pull-right">
-                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                    <i class="fa fa-chevron-down"></i>
-                                </button>
-                                <ul class="dropdown-menu slidedown">
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-refresh fa-fw"></i> Refresh
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-check-circle fa-fw"></i> Available
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-times fa-fw"></i> Busy
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-clock-o fa-fw"></i> Away
-                                        </a>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-sign-out fa-fw"></i> Sign Out
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <i class="fa fa-map fa-fw"></i> Area Map
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <ul class="chat">
-                                <li class="left clearfix">
-                                    <span class="chat-img pull-left">
-                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
-                                    </span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <strong class="primary-font">Jack Sparrow</strong>
-                                            <small class="pull-right text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
-                                            </small>
-                                        </div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="right clearfix">
-                                    <span class="chat-img pull-right">
-                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
-                                    </span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <small class=" text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
-                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
-                                        </div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="left clearfix">
-                                    <span class="chat-img pull-left">
-                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
-                                    </span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <strong class="primary-font">Jack Sparrow</strong>
-                                            <small class="pull-right text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
-                                        </div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="right clearfix">
-                                    <span class="chat-img pull-right">
-                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
-                                    </span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <small class=" text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small>
-                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
-                                        </div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
+                            <iframe width="100%" height="300" src="//jsfiddle.net/andregomars/h288byqw/1/embedded/result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
                         </div>
                         <!-- /.panel-body -->
-                        <div class="panel-footer">
-                            <div class="input-group">
-                                <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
-                                <span class="input-group-btn">
-                                    <button class="btn btn-warning btn-sm" id="btn-chat">
-                                        Send
-                                    </button>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- /.panel-footer -->
                     </div>
                     <!-- /.panel .chat-panel -->
                 </div>
@@ -563,6 +485,8 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
 
+   <script src="../vendor/bootstrap-toggle/js/bootstrap2-toggle.min.js"></script>
+
     <!-- Metis Menu Plugin JavaScript -->
     <script src="../vendor/metisMenu/metisMenu.min.js"></script>
 
@@ -570,12 +494,19 @@
     <!--script src="../vendor/googlechart/loader.js"></script-->
     <script src="../vendor/canvas-gauges/bundle.js"></script>
 
+
+ 
+
     <!-- Morris Charts JavaScript -->
     <script src="../vendor/raphael/raphael.min.js"></script>
     <script src="../vendor/morrisjs/morris.min.js"></script>
     <script src="../data/morris-data.js"></script>
 
 
+    <!-- Replace the value of the key parameter with your own API key. -->
+   <!--  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&callback=initMap">
+    </script>
+ -->
 
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
@@ -589,7 +520,8 @@
         maxValue: 100,
         value: 30,
         valueInt: 3,
-        valueDec: 0
+        valueDec: 0,
+        width: 200
     }).draw();
 
     var gaugePower = new RadialGauge({
@@ -600,7 +532,8 @@
         value: 80,
         valueInt: 2,
         valueDec: 0,
-        valueText: '80%'
+        valueText: '80%',
+        width: 200
     }).draw();
 
     var gaugeCurrent = new RadialGauge({
@@ -667,6 +600,7 @@
     setInterval(() => {
        gaugeSpeed.value = Math.round(Math.random() * 100);
     }, 3000);
+
 </script>
 </body>
 
